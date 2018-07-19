@@ -1,5 +1,3 @@
-/// <reference path="typings/html2canvas.d.ts" />
-
 class Point {
   x: number;
   y: number;

@@ -11,9 +11,9 @@ body {
   position: fixed;
   width: 100%;
   z-index: 2;
-}
 
-#head .wrap {
+
+  .wrap {
   max-width: 960px;
   display: flex;
   align-items: center;
@@ -21,46 +21,45 @@ body {
   min-height: 55px;
   justify-content: space-between;
   margin: 0 auto;
-}
+  }
 
-#head .left {
+  .left {
   font-weight: 600;
-}
+  }
 
-#head .right > a {
-  display: block;
-  float: left;
-  border-radius: 8px;
-  margin: 0 5px;
-}
 
-#head .right > a:hover {
-  background: #314294;
-}
 
-#head .right {
-  width: 130px;
-}
+  .right {
+    width: 130px;
 
+      > a {
+        display: block;
+        float: left;
+        border-radius: 8px;
+        margin: 0 5px;
+        &:hover {
+          background: #314294;
+          }
+        }
+  }
+}
 #main {
   max-width: 960px;
   margin: 0 auto;
   padding: 56px 0 0;
+  .wrap {
+    background: #3148b9;
+    box-shadow: 0 0 4px #000;
+    color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    min-height: 120px;
+    justify-content: space-between;
+    margin: 0 0 10px;
+    padding: 10px 20px;
+  }
 }
-
-#main .wrap {
-  background: #3148b9;
-  box-shadow: 0 0 4px #000;
-  color: #f3f3f3;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  min-height: 120px;
-  justify-content: space-between;
-  margin: 0 0 10px;
-  padding: 10px 20px;
-}
-
 td {
   border-bottom: 1px solid;
   padding: 0 3px;
@@ -86,45 +85,46 @@ tr:hover {
 
 .img-map {
   position: relative;
+
+
+  div {
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .tc {
+    width: 135px;
+    height: 30px;
+    top: 62px;
+    left: 11px;
+  }
+
+  .tu {
+    width: 65px;
+    height: 30px;
+    top: 70px;
+    left: 160px;
+  }
+
+  .rp {
+    width: 33px;
+    height: 30px;
+    top: 72px;
+    left: 235px;
+  }
 }
 
-.img-map div {
-  position: absolute;
-  cursor: pointer;
-}
-
-.img-map .tc {
-  width: 135px;
-  height: 30px;
-  top: 62px;
-  left: 11px;
-}
-
-.img-map .tu {
-  width: 65px;
-  height: 30px;
-  top: 70px;
-  left: 160px;
-}
-
-.img-map .rp {
-  width: 33px;
-  height: 30px;
-  top: 72px;
-  left: 235px;
-}
-
-.ts_inform > div > div {
-  float: left;
-}
-
-.ts_inform > div {
-  overflow: hidden;
-  padding: 3px 0;
-}
-
-.ts_inform img {
-  margin: 0 0 0 9px;
+.ts_inform {
+  img {
+    margin: 0 0 0 9px;
+  }
+  > div {
+    overflow: hidden;
+    padding: 3px 0;
+    > div {
+      float: left;
+    }
+  }
 }
 
 .vector canvas {
