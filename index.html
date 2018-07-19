@@ -1,0 +1,69 @@
+﻿<body>
+  <title>КПР-01МА | НПО "МИР"</title>
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link href="style.css" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <div id="head">
+        <div class="wrap">
+            <div id="kprname" class="left">
+                МИР КПР-01МА-5(50)-57-2ER-8ТС230-2ТУ-РП24
+            </div>
+            <img style="width:100px" src="img/logo.png">
+        </div>
+    </div>
+    <div id="main">
+        <div class="wrap">
+            <div class="left">
+                Информация об изделии:</br>
+                Серийный номер: 44596217030726</br>
+                Версия ПО: 0.059</br>
+                Сетевой адрес: 126</br>
+                IP адрес: 192.168.99.99</br>
+                MAC: 00:1A:B6:44:C2:D6</br>
+            </div>
+            <div class="right">
+                <table><tbody><tr><td></td><td> Фаза А </td><td> Фаза В </td><td> Фаза С </td><td> Прочие показания </td><td> Значение </td></tr><tr><td>Ток фазы</td><td>0.0000</td><td>0.0000</td><td>0.0000</td><td>Ток нейтрали</td><td>0.0000</td></tr><tr><td>Напряжение</td><td>0.00</td><td>0.00</td><td>0.00</td><td>Частота сети</td><td>0.000</td></tr><tr><td>Пол. мощность</td><td>0.000</td><td>0.000</td><td>0.000</td><td>Сумма пол. мощности</td><td>0.000</td></tr><tr><td>Акт. мощность</td><td>0.000</td><td>0.000</td><td>0.000</td><td>Сумма акт. мощности</td><td>0.000</td></tr><tr><td>Реакт. мощность</td><td>0.000</td><td>0.000</td><td>0.000</td><td>Сумма реак. мощности</td><td>0.000</td></tr><tr><td>Лин. напр. между фаз</td><td>0.000</td><td>0.000</td><td>0.000</td><td>Температура</td><td>48.102</td></tr><tr><td>COS F</td><td>-nan</td><td>-nan</td><td>-nan</td><td>Суммарный COS F</td><td>1.000</td></tr></tbody></table>
+            </div>
+        </div>
+        <div class="wrap info">
+            <div class="left vector">
+              <div>
+                <canvas id="vector" width="150" height="150"></canvas>
+                <canvas id="vector_power" width="150" height="150"></canvas>
+              </div>
+              <img src="img/vector_info1.png">
+            </div>
+            <div class="right">
+                <div id="regpit"></div>
+                <div id="regtu"></div>
+                <div id="regts"></div>
+                <div id="regeth"></div>
+                <div id="regrs"></div>
+            </div>
+            <div class="right ts_inform">
+                <div><div>ТС1 1</div><div><img src="img/1.png"></div></div>
+                <div><div>ТС2 1</div><div><img src="img/1.png"></div></div>
+                <div><div>ТС3 0</div><div><img src="img/0.png"></div></div>
+                <div><div>ТС4 0</div><div><img src="img/0.png"></div></div>
+                <div><div>ТС5 1</div><div><img src="img/1.png"></div></div>
+                <div><div>ТС6 0</div><div><img src="img/0.png"></div></div>
+                <div><div>ТС7 0</div><div><img src="img/0.png"></div></div>
+                <div><div>ТС8 1</div><div><img src="img/1.png"></div></div>
+            </div>
+        </div>
+        <div class="wrap info">
+            <div class="left img-map">
+                <div class="tc" onmouseover='about("TC");'></div>
+                <div class="tu" onmouseover='about("TU");'></div>
+                <div class="rp" onmouseover='about("RP");'></div>
+                <img src="img/kpr.jpg">
+            </div>
+            <div id="right_ts_tu">
+                Наведите курсор на избражение.
+            </div>
+        </div>
+    </div>
+    <div id="css"></div>
+</body>
+
+<script src="script.js"></script>

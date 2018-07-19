@@ -1,0 +1,23 @@
+{
+  "name": "www",
+  "author": "vk.com/bezrukovyra",
+  "description": "blank project",
+  "version": "1.0.0",
+  "dependencies": {
+    "gulp": "latest"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-changed": "latest",
+    "less": "2.1.0",
+    "gulp-less": "3.5.0",
+    "gulp-sourcemaps": "latest",
+    "gulp-typescript": "latest",
+    "gulp-watch": "latest",
+    "typescript": "latest",
+    "gulp-concat": "latest",
+    "gulp-uglify": "latest",
+    "gulp-clean-css": "latest",
+    "less-plugin-autoprefix": "latest"
+  }
+}
