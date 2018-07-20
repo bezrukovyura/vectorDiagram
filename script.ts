@@ -111,11 +111,11 @@ class vectorDiagram {
   
 }
 
-
+//************ Векторная диаграмма
 let vector = new vectorDiagram("vector", "vector_power");
 vector.redraw(1.333, 1.333, 1.333, 228.53, 228.53, 228.53,138.42, -870, 49, 49, 49,304, 304, 304, -300, -300, -300);
 
-
+//************ Интерфейс КПР-01МА
 function setHtml(id: string, html: string) {
   var generateHere = document.getElementById(id);
   generateHere.innerHTML = html;
