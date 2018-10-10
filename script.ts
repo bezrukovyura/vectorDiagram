@@ -12,8 +12,8 @@ class vectorDiagram {
   PairVector(Fa: number, Ua: number, h: number, Pa: number, Sa: number, Ia: number, Qa: number, color: string): void {
     let VoltagePoint = this.VoltagePoint(Fa, Ua, h);
     this.drawVector(VoltagePoint, color, false, this.idVectorDia);
-    let CarrentPoint = this.CarrentPoint(Fa, Pa, Sa, Ia, Qa, h)
-    this.drawVector(CarrentPoint, color, true, this.idVectorDia);
+    let CurrentPoint = this.CurrentPoint(Fa, Pa, Sa, Ia, Qa, h)
+    this.drawVector(CurrentPoint, color, true, this.idVectorDia);
   }
 
   VoltagePoint(fi: number, u: number, half: number): Point {
@@ -22,7 +22,7 @@ class vectorDiagram {
     return {x: x, y: y}
   }
   
-  CarrentPoint(phase: number, p: number, s: number, i: number, q: number, half: number): Point {
+  CurrentPoint(phase: number, p: number, s: number, i: number, q: number, half: number): Point {
     let xfi = Math.acos(p / s);
     if (q < 0) {
       xfi = -1 * xfi;
